@@ -25,5 +25,10 @@ namespace Juego_en_grupo
 
             this.Hide();
         }
+
+        private void bnumerico_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

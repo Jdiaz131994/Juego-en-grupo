@@ -42,14 +42,11 @@
             this.binicio = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.bjj = new System.Windows.Forms.RadioButton();
-            this.bcj = new System.Windows.Forms.RadioButton();
             this.bjc = new System.Windows.Forms.RadioButton();
-            this.bnumerico = new System.Windows.Forms.NumericUpDown();
             this.Dificultad = new System.Windows.Forms.Label();
             this.bfin = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bnumerico)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -182,10 +179,10 @@
             // 
             // binicio
             // 
-            this.binicio.BackColor = System.Drawing.Color.Purple;
+            this.binicio.BackColor = System.Drawing.Color.Blue;
             this.binicio.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.binicio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.binicio.Location = new System.Drawing.Point(56, 264);
+            this.binicio.Location = new System.Drawing.Point(41, 177);
             this.binicio.Margin = new System.Windows.Forms.Padding(4);
             this.binicio.Name = "binicio";
             this.binicio.Size = new System.Drawing.Size(189, 87);
@@ -197,14 +194,13 @@
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Blue;
             this.groupBox2.Controls.Add(this.bjj);
-            this.groupBox2.Controls.Add(this.bcj);
             this.groupBox2.Controls.Add(this.bjc);
             this.groupBox2.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(52, 90);
+            this.groupBox2.Location = new System.Drawing.Point(33, 25);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(215, 166);
+            this.groupBox2.Size = new System.Drawing.Size(212, 127);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tipo de juego";
@@ -212,24 +208,13 @@
             // bjj
             // 
             this.bjj.AutoSize = true;
-            this.bjj.Location = new System.Drawing.Point(15, 99);
+            this.bjj.Location = new System.Drawing.Point(15, 70);
             this.bjj.Margin = new System.Windows.Forms.Padding(4);
             this.bjj.Name = "bjj";
             this.bjj.Size = new System.Drawing.Size(182, 21);
             this.bjj.TabIndex = 2;
             this.bjj.Text = "Jugador_1 vs jugador_2";
             this.bjj.UseVisualStyleBackColor = true;
-            // 
-            // bcj
-            // 
-            this.bcj.AutoSize = true;
-            this.bcj.Location = new System.Drawing.Point(15, 67);
-            this.bcj.Margin = new System.Windows.Forms.Padding(4);
-            this.bcj.Name = "bcj";
-            this.bcj.Size = new System.Drawing.Size(151, 21);
-            this.bcj.TabIndex = 1;
-            this.bcj.Text = "Consola vs Jugador";
-            this.bcj.UseVisualStyleBackColor = true;
             // 
             // bjc
             // 
@@ -244,29 +229,6 @@
             this.bjc.Text = "Jugador vs Consola";
             this.bjc.UseVisualStyleBackColor = true;
             // 
-            // bnumerico
-            // 
-            this.bnumerico.Location = new System.Drawing.Point(163, 46);
-            this.bnumerico.Margin = new System.Windows.Forms.Padding(4);
-            this.bnumerico.Maximum = new decimal(new int[] {
-            9,
-            0,
-            0,
-            0});
-            this.bnumerico.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.bnumerico.Name = "bnumerico";
-            this.bnumerico.Size = new System.Drawing.Size(82, 20);
-            this.bnumerico.TabIndex = 10;
-            this.bnumerico.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // Dificultad
             // 
             this.Dificultad.AutoSize = true;
@@ -274,16 +236,15 @@
             this.Dificultad.Location = new System.Drawing.Point(64, 46);
             this.Dificultad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Dificultad.Name = "Dificultad";
-            this.Dificultad.Size = new System.Drawing.Size(79, 17);
+            this.Dificultad.Size = new System.Drawing.Size(0, 17);
             this.Dificultad.TabIndex = 9;
-            this.Dificultad.Text = "Dificultad :";
             // 
             // bfin
             // 
-            this.bfin.BackColor = System.Drawing.Color.Purple;
+            this.bfin.BackColor = System.Drawing.Color.Blue;
             this.bfin.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bfin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bfin.Location = new System.Drawing.Point(56, 359);
+            this.bfin.Location = new System.Drawing.Point(41, 287);
             this.bfin.Margin = new System.Windows.Forms.Padding(4);
             this.bfin.Name = "bfin";
             this.bfin.Size = new System.Drawing.Size(189, 87);
@@ -302,7 +263,6 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.binicio);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.bnumerico);
             this.Controls.Add(this.Dificultad);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Juego";
@@ -310,7 +270,6 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bnumerico)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -331,9 +290,7 @@
         private System.Windows.Forms.Button binicio;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton bjj;
-        private System.Windows.Forms.RadioButton bcj;
         private System.Windows.Forms.RadioButton bjc;
-        private System.Windows.Forms.NumericUpDown bnumerico;
         private System.Windows.Forms.Label Dificultad;
         private System.Windows.Forms.Button bfin;
     }
