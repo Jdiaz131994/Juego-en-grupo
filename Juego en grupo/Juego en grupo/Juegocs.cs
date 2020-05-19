@@ -30,5 +30,10 @@ namespace Juego_en_grupo
         {
 
         }
+
+        private void pBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
