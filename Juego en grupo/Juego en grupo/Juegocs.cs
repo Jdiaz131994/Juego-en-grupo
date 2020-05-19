@@ -10,34 +10,15 @@ using System.Windows.Forms;
 
 namespace Juego_en_grupo
 {
-    public partial class Juego : Form
+    public partial class XO : Form
     {
-        public Juego()
-        {
-            InitializeComponent();
-        }
-
-        private void bfin_Click(object sender, EventArgs e)
-        {
-            inicio frm = new inicio();
-
-            frm.Show();
-
-            this.Hide();
-        }
-
-        private void bnumerico_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-        
-
         int turno = 0;
-        public X0()
+        public XO()
         {
             InitializeComponent();
         }
 
+        
         private void pBox1_Click(object sender, EventArgs e)
         {
             PictureBoxChangeValue(ref pBox1);
@@ -46,12 +27,12 @@ namespace Juego_en_grupo
         {
             if (turno == 0)
             {
-                P.ImageLocation = @"C:\Users\luisl\Source\Repos\2020.2PO2\Hola Mundo\bin\Debug\0.jpg";
+                P.ImageLocation = @"C:\Users\Win10\source\repos\Juego-en-grupo2\cero.jpg";
                 turno = 1;
             }
             else
             {
-                P.ImageLocation = @"C:\Users\luisl\Source\Repos\2020.2PO2\Hola Mundo\bin\Debug\X.jpg";
+                P.ImageLocation = @"C:\Users\Win10\source\repos\Juego-en-grupo2\x.jpg";
                 turno = 0;
             }
             //P.ImageLocation = Path.GetDirectoryName(Application.ExecutablePath) + "\0.jpg";

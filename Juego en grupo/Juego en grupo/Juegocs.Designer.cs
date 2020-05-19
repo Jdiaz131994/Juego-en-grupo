@@ -1,6 +1,6 @@
 ﻿namespace Juego_en_grupo
 {
-    partial class Juego
+    partial class XO
     {
         /// <summary>
         /// Required designer variable.
