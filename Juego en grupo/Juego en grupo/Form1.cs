@@ -19,7 +19,7 @@ namespace Juego_en_grupo
 
         private void binicio_Click(object sender, EventArgs e)
         {
-            Juego frm = new Juego();
+            XO frm = new XO();
 
             frm.Show();
 

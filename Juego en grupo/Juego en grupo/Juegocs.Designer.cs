@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Juego));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XO));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.binicio = new System.Windows.Forms.Button();
             this.Dificultad = new System.Windows.Forms.Label();

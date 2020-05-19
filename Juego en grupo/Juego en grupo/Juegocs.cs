@@ -18,7 +18,6 @@ namespace Juego_en_grupo
             InitializeComponent();
         }
 
-        
         private void pBox1_Click(object sender, EventArgs e)
         {
             PictureBoxChangeValue(ref pBox1);
