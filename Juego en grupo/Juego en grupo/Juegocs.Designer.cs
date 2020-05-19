@@ -134,6 +134,7 @@
             this.pBox2.Size = new System.Drawing.Size(145, 131);
             this.pBox2.TabIndex = 1;
             this.pBox2.TabStop = false;
+            this.pBox2.Click += new System.EventHandler(this.pBox2_Click);
             // 
             // pBox3
             // 
@@ -142,6 +143,7 @@
             this.pBox3.Size = new System.Drawing.Size(145, 131);
             this.pBox3.TabIndex = 2;
             this.pBox3.TabStop = false;
+            this.pBox3.Click += new System.EventHandler(this.pBox3_Click);
             // 
             // pBox4
             // 
@@ -150,6 +152,7 @@
             this.pBox4.Size = new System.Drawing.Size(145, 131);
             this.pBox4.TabIndex = 3;
             this.pBox4.TabStop = false;
+            this.pBox4.Click += new System.EventHandler(this.pBox4_Click);
             // 
             // pBox5
             // 
@@ -158,6 +161,7 @@
             this.pBox5.Size = new System.Drawing.Size(145, 131);
             this.pBox5.TabIndex = 4;
             this.pBox5.TabStop = false;
+            this.pBox5.Click += new System.EventHandler(this.pBox5_Click);
             // 
             // pBox6
             // 
@@ -166,6 +170,7 @@
             this.pBox6.Size = new System.Drawing.Size(145, 131);
             this.pBox6.TabIndex = 5;
             this.pBox6.TabStop = false;
+            this.pBox6.Click += new System.EventHandler(this.pBox6_Click);
             // 
             // pBox7
             // 
@@ -174,6 +179,7 @@
             this.pBox7.Size = new System.Drawing.Size(145, 131);
             this.pBox7.TabIndex = 6;
             this.pBox7.TabStop = false;
+            this.pBox7.Click += new System.EventHandler(this.pBox7_Click);
             // 
             // pBox8
             // 
@@ -182,6 +188,7 @@
             this.pBox8.Size = new System.Drawing.Size(145, 131);
             this.pBox8.TabIndex = 7;
             this.pBox8.TabStop = false;
+            this.pBox8.Click += new System.EventHandler(this.pBox8_Click);
             // 
             // pBox9
             // 
@@ -190,6 +197,7 @@
             this.pBox9.Size = new System.Drawing.Size(145, 131);
             this.pBox9.TabIndex = 8;
             this.pBox9.TabStop = false;
+            this.pBox9.Click += new System.EventHandler(this.pBox9_Click);
             // 
             // Juego
             // 
