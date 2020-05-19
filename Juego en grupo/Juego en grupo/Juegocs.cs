@@ -26,12 +26,12 @@ namespace Juego_en_grupo
         {
             if (turno == 0)
             {
-                P.ImageLocation = @"C:\Users\Win10\source\repos\Juego-en-grupo2\cero.jpg";
+                P.ImageLocation = @"C:\Users\Acosa\source\repos\Juego-en-grupo\cero.jpg";
                 turno = 1;
             }
             else
             {
-                P.ImageLocation = @"C:\Users\Win10\source\repos\Juego-en-grupo2\x.jpg";
+                P.ImageLocation = @"C:\Users\Acosa\source\repos\Juego-en-grupo\x.jpg";
                 turno = 0;
             }
             //P.ImageLocation = Path.GetDirectoryName(Application.ExecutablePath) + "\0.jpg";
@@ -83,6 +83,16 @@ namespace Juego_en_grupo
         private void pBox9_Click(object sender, EventArgs e)
         {
             PictureBoxChangeValue(ref pBox9);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
