@@ -43,6 +43,7 @@
             this.Dificultad = new System.Windows.Forms.Label();
             this.bfin = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.pPlayer1 = new System.Windows.Forms.ProgressBar();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox8)).BeginInit();
@@ -226,12 +227,22 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // pPlayer1
+            // 
+            this.pPlayer1.Location = new System.Drawing.Point(28, 327);
+            this.pPlayer1.Maximum = 10;
+            this.pPlayer1.Name = "pPlayer1";
+            this.pPlayer1.Size = new System.Drawing.Size(189, 39);
+            this.pPlayer1.Step = 1;
+            this.pPlayer1.TabIndex = 15;
+            // 
             // XO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pPlayer1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.bfin);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -239,7 +250,9 @@
             this.Controls.Add(this.Dificultad);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "XO";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pal rato";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.XO_FormClosing);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox8)).EndInit();
@@ -271,5 +284,6 @@
         private System.Windows.Forms.PictureBox pBox2;
         private System.Windows.Forms.PictureBox pBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ProgressBar pPlayer1;
     }
 }

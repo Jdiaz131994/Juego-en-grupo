@@ -20,10 +20,7 @@ namespace Juego_en_grupo
         private void binicio_Click(object sender, EventArgs e)
         {
             XO frm = new XO();
-
             frm.Show();
-
-            this.Hide();
         }
     }
 }
