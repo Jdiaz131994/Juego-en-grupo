@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Juego_en_grupo
@@ -26,16 +27,42 @@ namespace Juego_en_grupo
         {
             if (turno == 0)
             {
-                P.ImageLocation = @"C:\Users\Acosa\source\repos\Juego-en-grupo\cero.jpg";
+                P.ImageLocation = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName + @"\Images\cero.jpg";
                 turno = 1;
             }
             else
             {
-                P.ImageLocation = @"C:\Users\Acosa\source\repos\Juego-en-grupo\x.jpg";
+                P.ImageLocation = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName + @"\Images\x.jpg";
                 turno = 0;
             }
-            //P.ImageLocation = Path.GetDirectoryName(Application.ExecutablePath) + "\0.jpg";
-            //MessageBox.Show(P.ImageLocation);
+
+            if (Evalauate() == 1)
+            {
+                MessageBox.Show("Ya hubo un ganador");
+                Clean();
+            }
+        }
+
+        public int Evalauate()
+        {
+            int Gano = 0;
+            if (pBox1.ImageLocation != Directory.GetParent(Environment.CurrentDirectory).Parent.FullName + @"\Images\blanco.jpeg" && pBox1.ImageLocation == pBox2.ImageLocation && pBox2.ImageLocation==pBox3.ImageLocation) Gano = 1;
+            if (pBox4.ImageLocation != Directory.GetParent(Environment.CurrentDirectory).Parent.FullName + @"\Images\blanco.jpeg" && pBox4.ImageLocation == pBox5.ImageLocation && pBox2.ImageLocation == pBox6.ImageLocation) Gano = 1;
+            if (pBox7.ImageLocation != Directory.GetParent(Environment.CurrentDirectory).Parent.FullName + @"\Images\blanco.jpeg" && pBox7.ImageLocation == pBox2.ImageLocation && pBox8.ImageLocation == pBox9.ImageLocation) Gano = 1;
+            return Gano;
+        }
+
+        public void Clean()
+        {
+            pBox1.ImageLocation = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName + @"\Images\blanco.jpeg";
+            pBox2.ImageLocation = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName + @"\Images\blanco.jpeg";
+            pBox3.ImageLocation = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName + @"\Images\blanco.jpeg";
+            pBox4.ImageLocation = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName + @"\Images\blanco.jpeg";
+            pBox5.ImageLocation = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName + @"\Images\blanco.jpeg";
+            pBox6.ImageLocation = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName + @"\Images\blanco.jpeg";
+            pBox7.ImageLocation = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName + @"\Images\blanco.jpeg";
+            pBox8.ImageLocation = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName + @"\Images\blanco.jpeg";
+            pBox9.ImageLocation = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName + @"\Images\blanco.jpeg";
         }
 
         private void X0_Load(object sender, EventArgs e)
@@ -93,6 +120,18 @@ namespace Juego_en_grupo
         private void button1_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void binicio_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Clean();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

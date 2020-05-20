@@ -193,6 +193,7 @@
             this.binicio.TabIndex = 12;
             this.binicio.Text = "Iniciar partida";
             this.binicio.UseVisualStyleBackColor = false;
+            this.binicio.Click += new System.EventHandler(this.binicio_Click);
             // 
             // Dificultad
             // 
