@@ -41,9 +41,9 @@
             this.pBox1 = new System.Windows.Forms.PictureBox();
             this.binicio = new System.Windows.Forms.Button();
             this.Dificultad = new System.Windows.Forms.Label();
-            this.bfin = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.pPlayer1 = new System.Windows.Forms.ProgressBar();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pPlayer2 = new System.Windows.Forms.ProgressBar();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox8)).BeginInit();
@@ -206,27 +206,6 @@
             this.Dificultad.Size = new System.Drawing.Size(0, 17);
             this.Dificultad.TabIndex = 9;
             // 
-            // bfin
-            // 
-            this.bfin.Location = new System.Drawing.Point(0, 0);
-            this.bfin.Name = "bfin";
-            this.bfin.Size = new System.Drawing.Size(75, 23);
-            this.bfin.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Blue;
-            this.button1.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(28, 178);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(189, 87);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Abandonar Partida";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // pPlayer1
             // 
             this.pPlayer1.Location = new System.Drawing.Point(28, 327);
@@ -235,16 +214,39 @@
             this.pPlayer1.Size = new System.Drawing.Size(189, 39);
             this.pPlayer1.Step = 1;
             this.pPlayer1.TabIndex = 15;
+            this.pPlayer1.Click += new System.EventHandler(this.pPlayer1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Chartreuse;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(49, 227);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(151, 49);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "Inicio";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // pPlayer2
+            // 
+            this.pPlayer2.Location = new System.Drawing.Point(28, 390);
+            this.pPlayer2.Maximum = 10;
+            this.pPlayer2.Name = "pPlayer2";
+            this.pPlayer2.Size = new System.Drawing.Size(189, 39);
+            this.pPlayer2.Step = 1;
+            this.pPlayer2.TabIndex = 17;
             // 
             // XO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(820, 450);
+            this.Controls.Add(this.pPlayer2);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.pPlayer1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.bfin);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.binicio);
             this.Controls.Add(this.Dificultad);
@@ -253,6 +255,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pal rato";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.XO_FormClosing);
+            this.Load += new System.EventHandler(this.XO_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox8)).EndInit();
@@ -273,7 +276,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button binicio;
         private System.Windows.Forms.Label Dificultad;
-        private System.Windows.Forms.Button bfin;
         private System.Windows.Forms.PictureBox pBox9;
         private System.Windows.Forms.PictureBox pBox8;
         private System.Windows.Forms.PictureBox pBox7;
@@ -283,7 +285,8 @@
         private System.Windows.Forms.PictureBox pBox3;
         private System.Windows.Forms.PictureBox pBox2;
         private System.Windows.Forms.PictureBox pBox1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ProgressBar pPlayer1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ProgressBar pPlayer2;
     }
 }

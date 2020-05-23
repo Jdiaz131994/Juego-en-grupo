@@ -22,5 +22,10 @@ namespace Juego_en_grupo
             XO frm = new XO();
             frm.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
