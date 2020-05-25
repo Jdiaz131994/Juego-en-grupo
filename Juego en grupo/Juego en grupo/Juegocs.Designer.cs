@@ -187,7 +187,7 @@
             this.binicio.BackColor = System.Drawing.Color.Blue;
             this.binicio.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.binicio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.binicio.Location = new System.Drawing.Point(28, 38);
+            this.binicio.Location = new System.Drawing.Point(46, 46);
             this.binicio.Margin = new System.Windows.Forms.Padding(4);
             this.binicio.Name = "binicio";
             this.binicio.Size = new System.Drawing.Size(189, 87);
@@ -208,7 +208,7 @@
             // 
             // pPlayer1
             // 
-            this.pPlayer1.Location = new System.Drawing.Point(28, 327);
+            this.pPlayer1.Location = new System.Drawing.Point(46, 289);
             this.pPlayer1.Maximum = 10;
             this.pPlayer1.Name = "pPlayer1";
             this.pPlayer1.Size = new System.Drawing.Size(189, 39);
@@ -221,7 +221,7 @@
             this.button2.BackColor = System.Drawing.Color.Chartreuse;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(49, 227);
+            this.button2.Location = new System.Drawing.Point(66, 160);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(151, 49);
             this.button2.TabIndex = 16;
@@ -231,12 +231,13 @@
             // 
             // pPlayer2
             // 
-            this.pPlayer2.Location = new System.Drawing.Point(28, 390);
+            this.pPlayer2.Location = new System.Drawing.Point(46, 363);
             this.pPlayer2.Maximum = 10;
             this.pPlayer2.Name = "pPlayer2";
             this.pPlayer2.Size = new System.Drawing.Size(189, 39);
             this.pPlayer2.Step = 1;
             this.pPlayer2.TabIndex = 17;
+            this.pPlayer2.Click += new System.EventHandler(this.pPlayer2_Click);
             // 
             // XO
             // 

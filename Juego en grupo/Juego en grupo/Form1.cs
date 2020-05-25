@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Juego_en_grupo
 {
-    public partial class inicio : Form
+    public partial class inicio : Form 
     {
         public inicio()
         {
@@ -21,6 +21,7 @@ namespace Juego_en_grupo
         {
             XO frm = new XO();
             frm.Show();
+                                   
         }
 
         private void button1_Click(object sender, EventArgs e)
