@@ -33,7 +33,7 @@ namespace Juego_en_grupo
             pictureBox3.Image = Properties.Resources.f_0;
             tablax_o.Controls.Clear();
 
-            // Arreglos para mostrar Fichas y meter valores en una matriz
+            // Arreglos para mostrar imagenes y meter valores en una matriz
             for (var i = 0; i < 3; i++)
             {
                 for (var j = 0; j < 3; j++)
@@ -71,7 +71,7 @@ namespace Juego_en_grupo
 
         public void VerificarJuego(int Fila, int Columna)
         {
-            // Contador de fichas en filas y columnas del gato
+            // Contador imagenes filas y columnas del x_o
             int x_oFilas = 0;
             int x_oColumnas = 0;
             int DiagonalPrincipal = 0;
@@ -193,12 +193,6 @@ namespace Juego_en_grupo
 
         }
 
-        private void picReiniciar_Click(object sender, EventArgs e)
-        {
-            IniciarJuego();
-        }
-
-
         private void X0_Load(object sender, EventArgs e)
         {
 
@@ -224,7 +218,7 @@ namespace Juego_en_grupo
 
         private void binicio_Click(object sender, EventArgs e)
         {
-            Clean();
+            Clean(); //limpiar tabla y marcador
             
         }
 
@@ -403,6 +397,6 @@ namespace Juego_en_grupo
     }*/
     
 
-
+    
 
     
