@@ -29,172 +29,33 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XO));
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.pBox9 = new System.Windows.Forms.PictureBox();
-            this.pBox8 = new System.Windows.Forms.PictureBox();
-            this.pBox7 = new System.Windows.Forms.PictureBox();
-            this.pBox6 = new System.Windows.Forms.PictureBox();
-            this.pBox5 = new System.Windows.Forms.PictureBox();
-            this.pBox4 = new System.Windows.Forms.PictureBox();
-            this.pBox3 = new System.Windows.Forms.PictureBox();
-            this.pBox2 = new System.Windows.Forms.PictureBox();
-            this.pBox1 = new System.Windows.Forms.PictureBox();
-            this.binicio = new System.Windows.Forms.Button();
+            this.inicio = new System.Windows.Forms.Button();
             this.Dificultad = new System.Windows.Forms.Label();
             this.pPlayer1 = new System.Windows.Forms.ProgressBar();
             this.button2 = new System.Windows.Forms.Button();
             this.pPlayer2 = new System.Windows.Forms.ProgressBar();
-            this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox1)).BeginInit();
+            this.tablax_o = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // inicio
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Black;
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel1.Controls.Add(this.pBox9, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pBox8, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pBox7, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pBox6, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pBox5, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pBox4, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pBox3, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pBox2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pBox1, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(273, 13);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(472, 427);
-            this.tableLayoutPanel1.TabIndex = 13;
-            // 
-            // pBox9
-            // 
-            this.pBox9.Image = ((System.Drawing.Image)(resources.GetObject("pBox9.Image")));
-            this.pBox9.Location = new System.Drawing.Point(314, 285);
-            this.pBox9.Name = "pBox9";
-            this.pBox9.Size = new System.Drawing.Size(145, 131);
-            this.pBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pBox9.TabIndex = 8;
-            this.pBox9.TabStop = false;
-            this.pBox9.Click += new System.EventHandler(this.pBox9_Click);
-            // 
-            // pBox8
-            // 
-            this.pBox8.Image = ((System.Drawing.Image)(resources.GetObject("pBox8.Image")));
-            this.pBox8.Location = new System.Drawing.Point(162, 285);
-            this.pBox8.Name = "pBox8";
-            this.pBox8.Size = new System.Drawing.Size(145, 131);
-            this.pBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pBox8.TabIndex = 7;
-            this.pBox8.TabStop = false;
-            this.pBox8.Click += new System.EventHandler(this.pBox8_Click);
-            // 
-            // pBox7
-            // 
-            this.pBox7.Image = ((System.Drawing.Image)(resources.GetObject("pBox7.Image")));
-            this.pBox7.Location = new System.Drawing.Point(10, 285);
-            this.pBox7.Name = "pBox7";
-            this.pBox7.Size = new System.Drawing.Size(145, 131);
-            this.pBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pBox7.TabIndex = 6;
-            this.pBox7.TabStop = false;
-            this.pBox7.Click += new System.EventHandler(this.pBox7_Click);
-            // 
-            // pBox6
-            // 
-            this.pBox6.Image = ((System.Drawing.Image)(resources.GetObject("pBox6.Image")));
-            this.pBox6.Location = new System.Drawing.Point(314, 147);
-            this.pBox6.Name = "pBox6";
-            this.pBox6.Size = new System.Drawing.Size(145, 131);
-            this.pBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pBox6.TabIndex = 5;
-            this.pBox6.TabStop = false;
-            this.pBox6.Click += new System.EventHandler(this.pBox6_Click);
-            // 
-            // pBox5
-            // 
-            this.pBox5.Image = ((System.Drawing.Image)(resources.GetObject("pBox5.Image")));
-            this.pBox5.Location = new System.Drawing.Point(162, 147);
-            this.pBox5.Name = "pBox5";
-            this.pBox5.Size = new System.Drawing.Size(145, 131);
-            this.pBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pBox5.TabIndex = 4;
-            this.pBox5.TabStop = false;
-            this.pBox5.Click += new System.EventHandler(this.pBox5_Click);
-            // 
-            // pBox4
-            // 
-            this.pBox4.Image = ((System.Drawing.Image)(resources.GetObject("pBox4.Image")));
-            this.pBox4.Location = new System.Drawing.Point(10, 147);
-            this.pBox4.Name = "pBox4";
-            this.pBox4.Size = new System.Drawing.Size(145, 131);
-            this.pBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pBox4.TabIndex = 3;
-            this.pBox4.TabStop = false;
-            this.pBox4.Click += new System.EventHandler(this.pBox4_Click);
-            // 
-            // pBox3
-            // 
-            this.pBox3.Image = ((System.Drawing.Image)(resources.GetObject("pBox3.Image")));
-            this.pBox3.Location = new System.Drawing.Point(314, 9);
-            this.pBox3.Name = "pBox3";
-            this.pBox3.Size = new System.Drawing.Size(145, 131);
-            this.pBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pBox3.TabIndex = 2;
-            this.pBox3.TabStop = false;
-            this.pBox3.Click += new System.EventHandler(this.pBox3_Click);
-            // 
-            // pBox2
-            // 
-            this.pBox2.Image = ((System.Drawing.Image)(resources.GetObject("pBox2.Image")));
-            this.pBox2.Location = new System.Drawing.Point(162, 9);
-            this.pBox2.Name = "pBox2";
-            this.pBox2.Size = new System.Drawing.Size(145, 131);
-            this.pBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pBox2.TabIndex = 1;
-            this.pBox2.TabStop = false;
-            this.pBox2.Click += new System.EventHandler(this.pBox2_Click);
-            // 
-            // pBox1
-            // 
-            this.pBox1.Image = ((System.Drawing.Image)(resources.GetObject("pBox1.Image")));
-            this.pBox1.Location = new System.Drawing.Point(10, 9);
-            this.pBox1.Name = "pBox1";
-            this.pBox1.Size = new System.Drawing.Size(145, 131);
-            this.pBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pBox1.TabIndex = 0;
-            this.pBox1.TabStop = false;
-            this.pBox1.Click += new System.EventHandler(this.pBox1_Click);
-            // 
-            // binicio
-            // 
-            this.binicio.BackColor = System.Drawing.Color.Blue;
-            this.binicio.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.binicio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.binicio.Location = new System.Drawing.Point(46, 46);
-            this.binicio.Margin = new System.Windows.Forms.Padding(4);
-            this.binicio.Name = "binicio";
-            this.binicio.Size = new System.Drawing.Size(189, 87);
-            this.binicio.TabIndex = 12;
-            this.binicio.Text = "Iniciar partida";
-            this.binicio.UseVisualStyleBackColor = false;
-            this.binicio.Click += new System.EventHandler(this.binicio_Click);
+            this.inicio.BackColor = System.Drawing.Color.Blue;
+            this.inicio.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inicio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.inicio.Location = new System.Drawing.Point(46, 46);
+            this.inicio.Margin = new System.Windows.Forms.Padding(4);
+            this.inicio.Name = "inicio";
+            this.inicio.Size = new System.Drawing.Size(189, 87);
+            this.inicio.TabIndex = 12;
+            this.inicio.Text = "Iniciar partida";
+            this.inicio.UseVisualStyleBackColor = false;
+            this.inicio.Click += new System.EventHandler(this.binicio_Click);
             // 
             // Dificultad
             // 
@@ -208,7 +69,7 @@
             // 
             // pPlayer1
             // 
-            this.pPlayer1.Location = new System.Drawing.Point(46, 289);
+            this.pPlayer1.Location = new System.Drawing.Point(67, 278);
             this.pPlayer1.Maximum = 10;
             this.pPlayer1.Name = "pPlayer1";
             this.pPlayer1.Size = new System.Drawing.Size(189, 39);
@@ -231,7 +92,7 @@
             // 
             // pPlayer2
             // 
-            this.pPlayer2.Location = new System.Drawing.Point(46, 363);
+            this.pPlayer2.Location = new System.Drawing.Point(67, 363);
             this.pPlayer2.Maximum = 10;
             this.pPlayer2.Name = "pPlayer2";
             this.pPlayer2.Size = new System.Drawing.Size(189, 39);
@@ -239,55 +100,90 @@
             this.pPlayer2.TabIndex = 17;
             this.pPlayer2.Click += new System.EventHandler(this.pPlayer2_Click);
             // 
+            // tablax_o
+            // 
+            this.tablax_o.ColumnCount = 3;
+            this.tablax_o.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tablax_o.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tablax_o.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
+            this.tablax_o.Location = new System.Drawing.Point(368, 23);
+            this.tablax_o.Name = "tablax_o";
+            this.tablax_o.RowCount = 3;
+            this.tablax_o.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tablax_o.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tablax_o.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 138F));
+            this.tablax_o.Size = new System.Drawing.Size(422, 364);
+            this.tablax_o.TabIndex = 18;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Juego_en_grupo.Properties.Resources.f_1;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 278);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(43, 39);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Juego_en_grupo.Properties.Resources.f_2;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 363);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(43, 39);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 20;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.pictureBox3.Image = global::Juego_en_grupo.Properties.Resources.f_0;
+            this.pictureBox3.Location = new System.Drawing.Point(12, 278);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(43, 39);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 21;
+            this.pictureBox3.TabStop = false;
+            // 
             // XO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(820, 450);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.tablax_o);
             this.Controls.Add(this.pPlayer2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pPlayer1);
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.binicio);
+            this.Controls.Add(this.inicio);
             this.Controls.Add(this.Dificultad);
+            this.Controls.Add(this.pictureBox3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "XO";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pal rato";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.XO_FormClosing);
             this.Load += new System.EventHandler(this.XO_Load);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button binicio;
+        private System.Windows.Forms.Button inicio;
         private System.Windows.Forms.Label Dificultad;
-        private System.Windows.Forms.PictureBox pBox9;
-        private System.Windows.Forms.PictureBox pBox8;
-        private System.Windows.Forms.PictureBox pBox7;
-        private System.Windows.Forms.PictureBox pBox6;
-        private System.Windows.Forms.PictureBox pBox5;
-        private System.Windows.Forms.PictureBox pBox4;
-        private System.Windows.Forms.PictureBox pBox3;
-        private System.Windows.Forms.PictureBox pBox2;
-        private System.Windows.Forms.PictureBox pBox1;
         private System.Windows.Forms.ProgressBar pPlayer1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ProgressBar pPlayer2;
+        private System.Windows.Forms.TableLayoutPanel tablax_o;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
