@@ -102,7 +102,6 @@
             // 
             // tablax_o
             // 
-            this.tablax_o.BackColor = System.Drawing.Color.White;
             this.tablax_o.ColumnCount = 3;
             this.tablax_o.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tablax_o.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
